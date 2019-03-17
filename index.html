@@ -1,26 +1,258 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Starter Page</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-  </head>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Assignment 1</title>
+<style>
+
+/********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+
+div#content1 {
+  border: 1px solid black;
+  background-color: grey;
+  height: 200px;
+  font-family: Helvetica;
+  width: 95%;
+  overflow: auto;
+  position: relative;
+  padding-left: 5px;
+  margin-top:10px;
+  margin-bottom:  10px;
+
+}
+
+div#content2 {
+  border: 1px solid black;
+  background-color: grey;
+  height: 200px;
+  font-family: Helvetica;
+  width: 95%;
+  overflow: auto;
+  position: relative;
+  padding-left: 5px;
+
+  margin-top:10px;
+  margin-bottom:  10px;
+
+}
+
+div#content3 {
+  border: 1px solid black;
+  background-color: grey;
+  height: 200px;
+  font-family: Helvetica;
+  overflow: auto;
+  position: relative;
+  padding-left: 5px;
+
+  margin-top:10px;
+  margin-bottom:  10px;
+
+}
+
+p.t1{
+  padding-left: 10px;
+  width: 70px;
+  height: 40px;
+  border: 1px solid red;
+  color: blue;
+  background-color: white;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  float:right;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+p.t2{
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 70px;
+  height: 40px;
+  border: 1px solid red;
+  color: red;
+  background-color: white;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  float:right;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+p.t3{
+  padding-left: 10px;
+  padding-top: 10px;
+  width: 70px;
+  height: 40px;
+  border: 1px solid black;
+  color: yellow;
+  background-color: red;
+  position: relative;
+  right: 0px;
+  top: 0px;
+  float:right;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+
+#p1{
+  clear: right;
+  color: black;
+}
+#p2{
+  clear: right;
+  color: black;
+}
+#p3{
+  clear: right;
+  color: black;
+}
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+    float: left;
+  }
+  .col-lg-1 {
+    width: 8.33%;
+  }
+  .col-lg-2 {
+    width: 16.66%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-4 {
+    width: 33.33%;
+  }
+  .col-lg-5 {
+    width: 41.66%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-7 {
+    width: 58.33%;
+  }
+  .col-lg-8 {
+    width: 66.66%;
+  }
+  .col-lg-9 {
+    width: 74.99%;
+  }
+  .col-lg-10 {
+    width: 83.33%;
+  }
+  .col-lg-11 {
+    width: 91.66%;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+    float: left;
+  }
+  .col-md-1 {
+    width: 8.33%;
+  }
+  .col-md-2 {
+    width: 16.66%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-4 {
+    width: 33.33%;
+  }
+  .col-md-5 {
+    width: 41.66%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-7 {
+    width: 58.33%;
+  }
+  .col-md-8 {
+    width: 66.66%;
+  }
+  .col-md-9 {
+    width: 74.99%;
+  }
+  .col-md-10 {
+    width: 83.33%;
+  }
+  .col-md-11 {
+    width: 91.66%;
+  }
+  .col-md-12 {
+    width: 97.5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .col_s_1,.col_s_2{
+    float: left;
+  }
+
+  .col_s_1{
+    width: 100%;
+  }
+
+  .col_s_2{
+    width: 95%;
+  }
+}
+
+</style>
+</head>
 <body>
-    
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-md-4 col-sm-6">Col 1</div>
-      <div class="col-md-4">Col 2</div>
-      <div class="col-md-4">Col 3</div>
+<h1 align="center">Our Menu</h1>
+<div class="row">
+  <div id="America">
+    <div class="col-lg-4 col-md-6 col_s_1">
+      <div id="content1">
+        <p class="t1">United States</p>
+        <p id="p1">
+        The United States of America (USA), commonly known as the United States (U.S. or US) or America, is a country composed of 50 states, a federal district, five major self-governing territories, and various possessions.
+        </p>
+      </div>
     </div>
   </div>
+  <div id="Canada">
+    <div class="col-lg-4 col-md-6 col_s_1">
+      <div id="content2">
+        <p class="t2">Canada</p>
+        <p id="p2">
+        Canada (Canadian French: [kanadɑ]) is a country in the northern part of North America. Its ten provinces and three territories extend from the Atlantic to the Pacific and northward into the Arctic Ocean, covering 9.98 million square kilometres (3.85 million square miles),
+        </p>
+      </div>
+    </div>
+  </div>
+  <div id="China">
+    <div class="col-lg-4 col-md-12 col_s_2">
+      <div id="content3">
+        <p class="t3">China</p>
+        <p id="p3">
+        China, officially the People's Republic of China (PRC), is a country in East Asia and the world's most populous country, with a population of around 1.404 billion.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- jQuery (Bootstrap JS plugins depend on it) -->
-  <script src="js/jquery-1.11.3.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/script.js"></script>
 </body>
 </html>
